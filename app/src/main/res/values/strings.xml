@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Meta Front Task</string>
+    <string name="zu_deinem">Zu deinem Vorteil kannst du die Abbuchung von deinem Konto auf einen späteren Tag im Monat verschieben. Wähle jeweils einen Tag für die Mietzahlung und die Abbuchung aus.</string>
+    <string name="mietzahlung_am">Mietzahlung am:</string>
+    <string name="lege_fest_an">Lege fest, an welchem Tag im Monat deine Mietzahlung an den Vermieter erfolgen soll.</string>
+    <string name="meine_zahlungen">Meine Zahlungen</string>
+    <string name="abbuchung_am">Abbuchung am:</string>
+</resources>
