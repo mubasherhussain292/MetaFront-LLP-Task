@@ -64,7 +64,7 @@ class DayPicker @JvmOverloads constructor(
 
         for (i in 0 until intervalCount) {
             val dotX = trackStartX + i * dotSpacing
-            val dotDrawable = if ((i + 1) % 5 == 0) fifthDot else regularDot // Every fifth dot uses a different drawable
+            val dotDrawable = if ((i + 1) % 5 == 0) fifthDot else regularDot
 
             dotDrawable?.let {
                 val dotSize = 16
@@ -92,19 +92,14 @@ class DayPicker @JvmOverloads constructor(
     override fun onTouchEvent(event: MotionEvent): Boolean {
         when (event.action) {
             MotionEvent.ACTION_DOWN, MotionEvent.ACTION_MOVE -> {
-                // Calculate the width of the track (excluding padding)
                 val trackWidth = width - paddingLeft - paddingRight
 
-                // Get the X position of the touch event and clamp it within the track range
                 val touchX = min(trackWidth.toFloat(), max(0f, event.x - paddingLeft))
 
-                // Update the progress based on the touch position
                 progress = (((touchX / trackWidth) * max).toInt())
 
-                // Request a redraw with the updated progress
                 invalidate()
 
-                // Return true to indicate we handled the touch event
                 return true
             }
         }

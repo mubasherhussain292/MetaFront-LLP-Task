@@ -107,7 +107,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/centeredAlledText" />
 
-    <com.side.effects.metafronttask.DayPicker
+    <com.side.effects.metafronttask.views.DayPicker
         android:id="@+id/dayPicker"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_50sdp"
@@ -127,7 +127,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dayPicker" />
 
-    <com.side.effects.metafronttask.DayPicker
+    <com.side.effects.metafronttask.views.DayPicker
         android:id="@+id/dayPicker2"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_50sdp"
@@ -143,6 +143,7 @@
         android:id="@+id/tabView"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_50sdp"
+        android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
